@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #e6f2ff; /* Light blue background */
+        padding: 30px;
+    }
+
+    form {
+        background-color: #ffffff;
+        padding: 20px 30px;
+        border-radius: 8px;
+        max-width: 400px;
+        margin-top: 20px;
+        border: 1px solid #b3d9ff; /* subtle border instead of shadow */
+    }
+
+    label {
+        display: block;
+        margin-top: 15px;
+        font-weight: bold;
+        color: #004080; /* Deep blue for labels */
+    }
+
+    input {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px solid #99ccff;
+        border-radius: 5px;
+        font-size: 14px;
+        background-color: #f0f8ff;
+    }
+
+    button {
+        margin-top: 20px;
+        padding: 10px 15px;
+        background-color: #66b3ff; /* Light blue button */
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    button:hover {
+        background-color: #3399ff;
+    }
+
+    #message {
+        margin-top: 15px;
+        font-size: 14px;
+        color: green;
+    }
+</style>
+
+</head>
+<body>
+    <h1>Add new Car</h1>
+    <a href="view.html" style="text-decoration: none;">
+        <button> Back to Car List </button>
+    </a> 
+    <Form id ="carForm">
+        <label for ="name">Brand name</label>
+        <input type= "text" id = "Brand" required/>
+
+        <label for ="Model">Car Model</label>
+        <input type= "text" id = "carModel" required/>
+
+        <label for ="Engine">Engine Size</label>
+        <input type= "number" id = "engineSize" required/>
+
+        <label for ="Gear">transmission</label>
+        <input type= "text" id = "transmission" required/> 
+
+        <button type = "submit">Add Brand</button>
+        <p id = "message"></p>
+
+        <script src = "add.js"></script>
+        
+    </Form>
+</body>
+</html>
